@@ -7,7 +7,7 @@
  * Enum: https://www.geeksforgeeks.org/enum-in-java/
  */
 package hw1;
-import java.util.*;
+import java.util.Date;
 public class NguyenTest {
 	
 	public static void main(String[] args) {
