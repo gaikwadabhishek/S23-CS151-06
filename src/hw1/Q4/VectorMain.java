@@ -8,8 +8,9 @@ public class VectorMain {
         System.out.println("Adding method: " + vectorInfo(testVector.add(v)));
         System.out.println("Dot product: " + testVector.dotProduct(v));
         System.out.println("Computing magnitude: " + testVector.computeMagnitude());
-        // normalize
         System.out.println("Scaling vector: " + vectorInfo(testVector.scaleVector(5)));
+        testVector.normalize();
+        System.out.println("Normalizing method: x = " + testVector.getX() + ", y = " + testVector.getY() + ", z = " + testVector.getZ());
     }
 
     public static String vectorInfo(Vector vector) {

@@ -3,7 +3,7 @@ package hw1.Q3;
 import java.util.ArrayList;
 
 public class AccountManager {
-    private ArrayList<BankAccount> listOfAccounts;
+    private ArrayList<BankAccount> listOfAccounts = new ArrayList<>();
 
     public AccountManager() {};
 
@@ -11,16 +11,20 @@ public class AccountManager {
         this.listOfAccounts = listOfAccounts;
     }
 
-    public void createAccount(String name) {
-        BankAccount newAccount = new BankAccount();
-        this.listOfAccounts.add(newAccount);
-        newAccount.setAccountNumber(listOfAccounts.indexOf(newAccount));
-        newAccount.setName(name);
-        newAccount.setBalance(0);
+    public ArrayList<BankAccount> getListOfAccounts() {
+        return this.listOfAccounts;
+    }
+
+    public void setListOfAccounts(ArrayList<BankAccount> listOfAccounts) {
+        this.listOfAccounts = listOfAccounts;
+    }
+
+    public void create(BankAccount account) {
+        this.listOfAccounts.add(account);
     }
 
     public void delete(BankAccount account) {
-        listOfAccounts.remove(listOfAccounts.indexOf(account));
+        this.listOfAccounts.remove(listOfAccounts.indexOf(account));
     }
 
     // Deposit

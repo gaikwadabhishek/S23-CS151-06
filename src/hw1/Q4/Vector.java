@@ -61,7 +61,10 @@ public class Vector {
     }
 
     public void normalize() {
-
+        double magnitude = computeMagnitude();
+        this.x /= magnitude;
+        this.y /= magnitude;
+        this.z /= magnitude;
     }
 
     public Vector scaleVector(double factor) {
