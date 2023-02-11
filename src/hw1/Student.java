@@ -13,12 +13,12 @@ public class Student {
 	private String introduction;
 	private int studentId; // only last 4 digits
 	private Branch branch;
-	private Date dob;
+	private int dob;
 
 	public Student() {
 	}
 
-	public Student(String name, String introduction, int studentId, Branch branch, Date dob) {
+	public Student(String name, String introduction, int studentId, Branch branch, int dob) {
 		this.name = name;
 		this.introduction = introduction;
 		this.studentId = studentId;
@@ -58,12 +58,12 @@ public class Student {
 		this.branch = branch;
 	}
 
-	public Date getDob() {
+	public int getDob() {
 		return dob;
 	}
 
-	public void setDob(Date dob) {
-		this.dob = dob;
+	public void setDob(int i) {
+		this.dob = i;
 	}
 
 	@Override
