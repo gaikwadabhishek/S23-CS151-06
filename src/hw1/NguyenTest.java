@@ -14,6 +14,7 @@ enum Branch {
 public class NguyenTest {
   
    public static Date dateGen(String date){
+    //method reference from http://www.java2s.com/Tutorial/Java/0040__Data-Type/SimpleDateFormat.htm
        String pattern = "MM/dd/yy";
        SimpleDateFormat format = new SimpleDateFormat(pattern);
        Date d = new Date();
