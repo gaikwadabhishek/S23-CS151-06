@@ -3,8 +3,12 @@ package hw1;
 public class NguyenTest {
 	
 	public static void main(String[] args) {
-		Student myStudent = new Student("Ricky", "3rd year", "9181", "COMPUTER_SCIENCE", "06/12/02");
-		System.out.println(myStudent);
+		String intro = "My name is Ricky Nguyen, 3rd Year computer science major.";
+		Date dob = new Date("06/12/2002);
+				   
+		Student Nguyen = new Student("Ricky Nguyen", intro, 9181, Branch.COMPUTER_SCIENCE, dob);
+				    
+		System.out.println(Nguyen.toString());
 
 	}
 
