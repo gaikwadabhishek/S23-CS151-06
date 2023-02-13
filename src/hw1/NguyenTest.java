@@ -6,13 +6,14 @@ import java.util.*;
 
 public class NguyenTest {
     public static void main(String[] args) throws ParseException {
-        Student student = new Student();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        Date dob = formatter.parse("27/02/2003");
+        String name = "Trique (Dung) Nguyen";
+        String introduction = "I do web development";
+        int studentId = 9103;
+        Branch branch = Branch.SOFTWARE_ENGINEERING;
 
-        student.setName("Trique (Dung) Nguyen");
-        student.setIntroduction("I do web development");
-        student.setStudentId(9103);
-        student.setBranch(Branch.SOFTWARE_ENGINEERING);
-        student.setDob("27-Feb-2003");
+        Student student = new Student(name, introduction, studentId, branch, dob);
         System.out.println(student.toString());
     }
 }
