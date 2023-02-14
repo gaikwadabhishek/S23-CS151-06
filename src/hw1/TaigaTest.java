@@ -16,10 +16,14 @@ public class TaigaTest {
 		this.branch = branch; 
 		this.year = year; 
 		
-		System.out.println("Name Registered: " + name);
+		System.out.printf("Name Registered: " + name + ", " + studentId + ", " + branch, "+ ", year);
 	}
 	
 	public TaigaTest(String name, String studentId, String branch) {
+		this.name = "";
+		this.studentId = "";
+		this.branch = "";
+		this.year = 0;
 	}
 	
 	public String getName() {
