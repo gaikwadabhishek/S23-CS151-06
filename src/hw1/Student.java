@@ -72,4 +72,17 @@ public class Student {
 				+ branch + ", dob=" + dob + "]";
 	}
 
+	public class FiloteoTest {
+
+		public static void main(String[] args) throws ParseException {
+			// Date class referenced from https://stackoverflow.com/questions/8459776/date-in-constructor-in-java
+			DateFormat df = new SimpleDateFormat("MM-dd-yyyy");
+			Date d1 = df.parse("08-07-2003"); 
+		
+			Student me = new Student("Benjamin", "I like sleeping", 9335, Branch.OTHER, d1);
+			System.out.println(me.toString());
+	}
+
+}
+
 }
