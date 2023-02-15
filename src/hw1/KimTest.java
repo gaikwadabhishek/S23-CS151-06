@@ -16,7 +16,7 @@ public class KimTest {
 
 	// Reference: https://www.geeksforgeeks.org/java-simpledateformat-set-1/
 	// Created a method to format the date but realized this would not print the
-	// date this way because of the specified toString method, but keeping the 
+	// date in format because of the specified toString method, but keeping the 
 	// method for the date input for argument.
 	public static Date inFormat(String dob) {
 		String pattern = "MM-dd-yyyy";
@@ -40,7 +40,7 @@ public class KimTest {
 		Student student = new Student("James Kim", "Hello World", 334455, Branch.OTHER, inFormat(dob));
 
 		System.out.println(student);
-
+		
 	}
 
 }
