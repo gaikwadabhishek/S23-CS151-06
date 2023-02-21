@@ -3,6 +3,7 @@ package hw1;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 
 enum Branch {
 	COMPUTER_SCIENCE, SOFTWARE_ENGINEERING, OTHER
@@ -14,9 +15,13 @@ public class Student {
 	private int studentId; // only last 4 digits
 	private Branch branch;
 	private Date dob;
+	public Student() {}
 
-	public Student() {
-	}
+	//------------- MY CODE ----------------
+
+
+
+	//------------- MY CODE ----------------
 
 	public Student(String name, String introduction, int studentId, Branch branch, Date dob) {
 		this.name = name;
