@@ -18,7 +18,6 @@ public class InsideButton implements Button {
 
 	@Override
 	public void wasPressed() {
-		ElevatorController.callElevator(floor);
 	}
 
 }
